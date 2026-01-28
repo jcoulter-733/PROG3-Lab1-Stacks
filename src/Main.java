@@ -6,9 +6,12 @@ public class Main {
         //reverse.getChars();
         //reverse.reverseChars();
 
-        BinaryConvertor convert = new BinaryConvertor();
-        convert.getNumber();
-        convert.displayBinary();
+        //BinaryConvertor convert = new BinaryConvertor();
+        //convert.getNumber();
+        //convert.displayBinary();
+
+        PalindromeChecker checker = new PalindromeChecker();
+        checker.check();
 
     }
 }
