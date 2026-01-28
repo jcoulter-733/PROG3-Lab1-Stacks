@@ -18,8 +18,8 @@ public class StackTester {
     /**
      * push item onto stack
      */
-    public void pushNumber(int num) {
-        boolean ok = stack.push(new Integer(num));   // attempt to push
+    public void pushString(String str) {
+        boolean ok = stack.push(new String(str));   // attempt to push
         if (!ok)                // check if push was unsuccessful
             System.out.println("Push unsuccessful");
         else
@@ -29,10 +29,10 @@ public class StackTester {
     /**
      * pop number from staff
      */
-    public void popNumber() {
-        Integer result = (Integer) stack.pop();
+    public void popString() {
+        String result = (String) stack.pop();
         if (result!=null)
-            System.out.println("Number is :" + result.intValue());
+            System.out.println("String is :" + result);
         else
             System.out.println("Pop unsuccessful");
     }
@@ -60,7 +60,7 @@ public class StackTester {
     /**
      * list the numbers in stack
      */
-    public void listNumbersInStack() {
+    public void listStringsInStack() {
         if (stack.isEmpty()) {
             System.out.println("Stack empty");
         }
